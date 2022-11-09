@@ -4,6 +4,7 @@ namespace App\Jobs;
 
 use App\Models\Dollar;
 use App\Models\Payment;
+use App\Models\Client;
 use Illuminate\Bus\Queueable;
 use App\Jobs\SendEmailJob;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -79,8 +80,8 @@ class DollarValidate implements ShouldQueue
         $object = $object;
         $cash = $cash;
         $val = Payment::where('uuid', $object["idpay"])->update(['payment_date' => $object["paydate"], "usd_clp" => $cash, "status" => "pay"]);
-        //$email = Client::select('email')->where("id", $object["idcli"])->first();
-        $details['email'] = "mauri-1973@outlook.cl";
+        $email = Client::select('email')->where("id", $object["idcli"])->first();
+        $details['email'] = $email->email;
         dispatch(new SendEmailJob($details));
         return response()->json(['message'=>'Mail Send Successfully!!']);
     }
