@@ -35,13 +35,13 @@
 
 ## Ver pagos pendientes
 
-- Presione el botón add Pay, el mostrará una ventana modal con la información de los pagos pendientes
+- Presione el botón Add Pay, el mostrará una ventana modal con la información de los pagos pendientes
 <p align="center">
 <a href="https://develop.etarjetas.cl/images/imagenesiniciales/actualizar.png" target="_blank"><img src="https://develop.etarjetas.cl/images/imagenesiniciales/actualizar.png" alt="Build Status"></a>
 
 ## Actualizar Pago
 
-- Presione el botón submit del formulario presentado en la ventana modal, para enviar los datos de actualización del pago pendiente
+- Presione el botón Update del formulario presentado en la ventana modal, para enviar los datos de actualización del pago pendiente
 <p align="center">
 <a href="https://develop.etarjetas.cl/images/imagenesiniciales/actualizar.png" target="_blank"><img src="https://develop.etarjetas.cl/images/imagenesiniciales/actualizar.png" alt="Build Status"></a>
 
