@@ -15,7 +15,7 @@
 
 ## Login
 
-- Una vez generadas las tablas correspondientes y cargado los datos de prueba, seleccione un usuario creado de la tabla pay_users, seleciones un email e ingres la contraseña genérica password
+- Una vez generadas las tablas correspondientes y cargado los datos de prueba, seleccione un usuario creado de la tabla pay_users, seleciones un email e ingrese la contraseña genérica password
 <p align="center">
 <a href="https://develop.etarjetas.cl/images/imagenesiniciales/login.png" target="_blank"><img src="https://develop.etarjetas.cl/images/imagenesiniciales/login.png" alt="Build Status"></a>
 </p>
@@ -31,8 +31,7 @@
 
 - Presione el botón history, el cual resteará la tabla inicial, mostrando a continuación el historial de pagos del cliente con su respectivo estado
 <p align="center">
-<a href="https://develop.etarjetas.cl/images/imagenesiniciales/historial.png" target="_blank"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://develop.etarjetas.cl/images/imagenesiniciales/historial.png" target="_blank"><img src="" alt="Build Status"></a>
+<a href="https://develop.etarjetas.cl/images/imagenesiniciales/historial.png" target="_blank"><img src="https://develop.etarjetas.cl/images/imagenesiniciales/historial.png" alt="Build Status"></a>
 
 ## Ver pagos pendientes
 
