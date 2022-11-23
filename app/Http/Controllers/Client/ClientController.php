@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 
-use App\Models\Client;
+use App\Models\Clients;
 use App\Http\Resources\ClientResourse;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -19,12 +19,12 @@ class ClientController extends Controller
     {
         if ($request->ajax()) {
             $arreglo = array();
-            $products = ClientResourse::collection(Client::all());
+            $products = ClientResourse::collection(Clients::all());
             foreach ($products as $key => $property)
             {
                 array_push($arreglo, array("id" => $property->id, "email" => $property->email, "join_date" => date("d-m-Y", strtotime($property->join_date->toDateTimeString()))));
             }
-            $data = Client::select('id','email','join_date')->get();
+            $data = Clients::select('id','email','join_date')->get();
             return Datatables::of($arreglo)->addIndexColumn()
                 ->addColumn('action', function($row){
                     $btn = '<button onclick="viewhistory('.$row["id"].')" class="btn btn-primary btn-sm">View History</button>';
